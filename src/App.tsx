@@ -5,6 +5,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { TimeClock } from "@mui/x-date-pickers";
 import dayjs from "dayjs";
 import { useState } from "react";
+import Calendar from "./calendar";
 // import dayjs from "dayjs";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <Box>
+      <Calendar />
       <DemoContainer components={["TimeClock", "TimeClock"]}>
         <Typography variant="h6" gutterBottom>
           TimeClock
